@@ -1,68 +1,97 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-html,body {
-    width:100vw;
-    height: 100vh;
-    background-color: rgb(104, 61, 104);
+:root {
+    --cor01:#3f836a;
+    --cor02:#164937e1;
+    --cor03: #37a77d;
+}   
+            /* Mobile First */
+
+@media screen and (min-width:340px) {
+    body {
+        background-color: #342882;
+    }
+
+    main {
+        height: 500px;
+        width: 300px;
+        
+    }
+    
+    h1 {
+        font-size: 1.3em;
+        margin: 30px 20px 10px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {    
+        font-size: 1.3em;
+        margin: 10px 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    input {
+        margin:auto;
+    }
+
+    #pais {
+        width: 300px;
+        height: 189px;
+        background: whitesmoke url(../imagem/imagem-login.jpg) no-repeat;
+        background-position: left center;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .material-symbols-outlined {
+        position: relative;
+        left: 22px;
+        top: 28px;
+    }
 }
 
 main {
-    margin: auto;
-    width: 340px;
-    height: 545px;
-    border: 1px solid black;
-    border-radius: 10px;
     position: absolute;
-    top: 50vh;
-    left: 50vw;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 5px 6px 3px #00000052;
     background-color: whitesmoke;
 }
 
-h1, h2 {
-   margin: 10px 20px;
-}
-
-span {
-    background-color: pink;
-}
-
 input {
-    width:250px;
+    display: block;
     padding: 5px;
-    margin-bottom: 10px;
-}
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+}    
 
-#form {
-    margin: 0 auto;
-    width: 340px;
+.pren {
+    outline: 1px solid var(--cor03);
 }
 
 .botao {
-    display: block;
-    margin: 15px auto;
-    width: 270px;
-    color:white;
-    background-color: rgb(45, 146, 87);
-    border: 1px solid rgba(0, 0, 0, 0.616);
+    background-color: var(--cor01);
+    color: white;
+    margin: 10px auto;
 }
 
 .botao:hover {
-    background-color: rgb(27, 88, 53);
+    background-color: var(--cor02);
+    cursor: pointer;
     transition: .5s;
 }
 
-#pais {
-    width: 340px;
-    height: 250px;
-    border-radius: 10px;
-    background: rgb(82, 61, 82) url(../imagem/imagem-login.jpg) center center no-repeat;
-    background-size: cover;
-    margin-top: 29px;
+
+.material-symbols-outlined {
+    width: 26px;
+    height: 26px;
+    background-color: var(--cor03);
+    padding: 1px 0 2px 0;
+    border-radius: 10px 0 0 10px;
+    font-size: 22px;
+    text-align: center;
 }
