@@ -12,17 +12,29 @@
 </head>
 <body>
     <main>
-        <h1>Bem-vindo!</h1>
-        <h2>Faça login para continuar.</h2>
-        <form action="login.php" method="post" id="form" autocomplete="on">
-            <label for="usua" ><span class="material-symbols-outlined">person</span></label>
-            <input class="pren" type="email" name="usua" id="usua" autocomplete="email" placeholder="Ex: Email@gmail.com" required>
-            <label for="senha"><span class="material-symbols-outlined">password</span></label>
-            <input class="pren" type="password" name="senha" id="senha" autocomplete="new-password password" placeholder="Ex: Senha1234" required><br>
-            <input class="botao" type="submit" value="Entrar">
-            <input class="botao" type="button" value="Esqueci a Senha">
-        </form>
-        <div id="pais"></div>
+        <div id="login">
+            <h1>Bem-vindo!</h1>
+            <h2>Faça login para continuar.</h2>
+            <form action="login.php" method="post" id="form" autocomplete="on">
+                <div class="campo">
+                    <span class="material-symbols-outlined">person</span>
+
+                    <input class="pren" type="email" name="usua" id="usua" autocomplete="email" placeholder="Ex: Email@gmail.com" required>
+                    
+                    <label for="usua">Login</label>
+                </div>
+                <div class="campo">
+                    <span class="material-symbols-outlined">password</span>
+
+                    <input class="pren" type="password" name="senha" id="senha" autocomplete="new-password password" placeholder="Ex: Senha1234" required>
+
+                    <label for="senha">Senha</label>
+                </div>  <br>
+                <input class="botao" type="submit" value="Entrar">
+                <input class="botao" type="button" value="Esqueci a Senha">
+            </form>
+        </div>
+        <div id="imagem"></div>
     </main>
 </body>
 </html>

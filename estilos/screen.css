@@ -8,8 +8,8 @@
     }
 
     main {
-        width: 600px;
-        height: 300px;
+        width: 75vw;
+        height: 40vh;
     }
 
     h1 {
@@ -20,30 +20,30 @@
 
     h2 {
         font-size: 1em;
-        margin: 10px 20px;
+        margin: 15px 20px;
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    input {
-        margin-left: 45px;
+    .campo {
+        margin-top:20px;
+        width: 240px;
     }
 
-    .botao {
-        margin-left: 45px;
+    #login {
+        float: left;
+        width: 60%;
+        height: 100%;
     }
 
-    #pais {
-        width: 300px;
-        height: 300px;
-        position: relative;
-        left: 300px;
-        bottom: 300px;
-        border-radius: 0 10px 10px 0;
-        background-position: top left;
+    #imagem{
+        float: right;
+        margin: 0;
+        width: 40%;
+        height: 100%;
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     body {
         background: linear-gradient(to top, #241b5e,#692fc0,#6f2591);
         height: 100vh;
@@ -51,46 +51,32 @@
     }
     
     main {
-        width: 850px;
+        width: 900px;
         height: 400px;
     }
 
     h1 {
-        font-size: 1.7em;
+        font-size: 1.5em;
         margin: 30px 20px 10px 20px;
         font-family: Arial, Helvetica, sans-serif;
     }
 
     h2 {
-        font-size: 1.7em;
+        font-size: 1.5em;
         margin: 10px 20px 0 20px;
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    input {
-        margin-left: 70px;
-        width: 300px;
-        height: 30px;
-    }
-    .botao {
-        margin: 6px 0 15px 75px ;
+    #login {
+        float: left;
+        width: 55%;
+        height: 100%;
     }
 
-    #pais {
-        width: 350px;
-        height: 400px;
-        position: relative;
-        left: 500px;
-        bottom: 390px;
-        border-radius: 0 10px 10px 0;
-        background-position: top left;
-    }
-
-    .material-symbols-outlined {
-        position: relative;
-        left: 37px;
-        top: 43px;
-        font-size: 27px;
-        padding: 9px 5px;
+    #imagem {
+        float: right;
+        margin: 0;
+        width: 45%;
+        height: 100%;
     }
 }
