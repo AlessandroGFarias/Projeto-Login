@@ -21,7 +21,7 @@ main {
         top: 50%;
     height: 500px;
     width: 300px;
-    transform: translate(-50%, -50%);
+    
 
     border-radius: 10px;
     border: 1px solid black;
@@ -30,6 +30,7 @@ main {
     background-color: whitesmoke;
 
     overflow: hidden;
+    transform: translate(-50%, -50%);
     transition: width .2s, height .2s;
     transition-timing-function: ease;
 }
